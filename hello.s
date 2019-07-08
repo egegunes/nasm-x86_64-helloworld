@@ -21,7 +21,7 @@ _start:	    mov	    rax, 1	    ;sys_write
 	    syscall
 
 	    mov	    rax, 0	    ;sys_read
-	    mov	    rdi, 1	    ;unsigned int fd = STDIN
+	    mov	    rdi, 0	    ;unsigned int fd
 	    mov	    rsi, buffer	    ;char *buf
 	    mov	    rdx, 5	    ;size_t count
 	    syscall
